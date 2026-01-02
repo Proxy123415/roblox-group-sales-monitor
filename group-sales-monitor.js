@@ -200,7 +200,7 @@ if (ROBLOX_GROUP_ID && process.env.ENABLE_POLLING === 'true') {
 app.listen(PORT, () => {
 	console.log(`Roblox Group Sales Monitor`);
 	console.log(`Server: http://localhost:${PORT}`);
-	console.log(`Group ID: ${ROBLOX_GROUP_ID || '⚠️  Not configured'}`);
+	console.log(`Group ID: ${ROBLOX_GROUP_ID || 'Not configured'}`);
 	console.log(`Discord Webhook: ${DISCORD_WEBHOOK ? '✓' : '✗'}`);
 	console.log(`Revenue API Auth: ${ROBLOX_COOKIE ? '✓' : '✗'}`);
 	console.log(`Open Cloud API: ${ROBLOX_API_KEY ? '✓' : '✗'}`);
