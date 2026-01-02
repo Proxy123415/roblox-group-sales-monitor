@@ -1,8 +1,4 @@
-# Logging Group Sales from the Website to Discord
-
-Yes! You can monitor your Roblox group sales from the website without being in a game. Here are the methods:
-
-## Method 1: Revenue API (Recommended - Real-time)
+##Revenue API (Recommended - Real-time)
 
 This is the **most reliable** method for monitoring actual group earnings in real-time.
 
@@ -13,7 +9,6 @@ This is the **most reliable** method for monitoring actual group earnings in rea
    - Open **Developer Tools** (F12)
    - Go to **Application** → **Cookies** → roblox.com
    - Find `.ROBLOSECURITY` cookie and copy its value
-   - ⚠️ **KEEP THIS SECRET** - don't share it!
 
 2. **Configure .env:**
    ```
@@ -35,7 +30,7 @@ This is the **most reliable** method for monitoring actual group earnings in rea
    - Sends Discord notification when revenue increases
    - No game required!
 
-## Method 2: Open Cloud API
+## Open Cloud API
 
 Official Roblox API - more features but requires setup.
 
@@ -64,23 +59,12 @@ Official Roblox API - more features but requires setup.
    npm start
    ```
 
-## Method 3: Hybrid Approach (Game + Website)
+## Hybrid
 
 Use both methods together:
 
 1. Run the game script (previous setup) for **per-purchase** notifications
 2. Run the website monitor for **total revenue tracking**
-
-This gives you both real-time individual sales AND overall revenue growth.
-
-## Comparison
-
-| Method | Real-time | Details | Setup | Reliability |
-|--------|-----------|---------|-------|-------------|
-| **Revenue API** | ✓ Very fast | Pending/Available/Converted | Easy | ★★★★★ |
-| **Open Cloud** | ⚠️ Slower | Universe analytics | Medium | ★★★★☆ |
-| **Game Script** | ✓ Instant | Per-purchase data | Easy | ★★★★★ |
-| **Combined** | ✓ Best | All data | Medium | ★★★★★ |
 
 ## Troubleshooting
 
@@ -106,11 +90,11 @@ This gives you both real-time individual sales AND overall revenue growth.
 
 ## Security Notes
 
-- ✓ The .ROBLOSECURITY cookie gives access to your account
-- ✓ Store it in `.env` (add to .gitignore)
-- ✓ Never commit .env to GitHub
-- ✓ Change your password if the cookie is exposed
-- ✓ The API key should be kept private too
+- The .ROBLOSECURITY cookie gives access to your account
+- Store it in `.env` (add to .gitignore)
+- Never commit .env to GitHub
+- Change your password if the cookie is exposed
+- The API key should be kept private too
 
 ## File Structure
 
@@ -124,7 +108,7 @@ This gives you both real-time individual sales AND overall revenue growth.
 
 ## Next Steps
 
-1. Choose your method (Revenue API recommended)
+1. Choose your method 
 2. Run `npm install`
 3. Configure `.env`
 4. Run `npm start`
