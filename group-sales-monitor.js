@@ -1,5 +1,4 @@
 /**
- * ROBLOX GROUP SALES MONITOR
  * 
  * Setup: npm install express axios dotenv cheerio
  */
