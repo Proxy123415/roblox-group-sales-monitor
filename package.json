@@ -1,0 +1,30 @@
+{
+  "name": "roblox-group-sales-monitor",
+  "version": "2.0.0",
+  "description": "Monitor Roblox group sales from website and log to Discord webhook",
+  "main": "group-sales-monitor.js",
+  "scripts": {
+    "start": "node group-sales-monitor.js",
+    "dev": "nodemon group-sales-monitor.js"
+  },
+  "keywords": [
+    "roblox",
+    "discord",
+    "webhook",
+    "group",
+    "sales",
+    "monitor",
+    "revenue"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
